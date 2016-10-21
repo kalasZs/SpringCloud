@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: clientA
+
+server:
+  port: 2221
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  healthcheck:
+      enabled: true
