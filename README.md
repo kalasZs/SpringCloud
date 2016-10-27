@@ -4,7 +4,7 @@
 新版本文档提到：
 > By default, Eureka uses the client heartbeat to determine if a client is up. Unless specified otherwise the
 Discovery Client will not propagate the current health check status of the application per the Spring Boot Actuator. Which means that after successful registration Eureka will always announce that the application is in 'UP' state. This behaviour can be altered by enabling Eureka health checks, which results in propagating application status to Eureka. As a consequence every other application won’t be sending traffic to application in state other then 'UP'.
-##### `在client端application.yml配置-这部分会让client启动心跳检测，但是这部分的性能影响还没进行测试，留到后面观察`
+##### ***在client端application.yml配置-这部分会让client启动心跳检测，但是这部分的性能影响还没进行测试，留到后面观察***
 ```java
 eureka:
 　client:
