@@ -42,7 +42,7 @@ https://github.com/spring-cloud/spring-cloud-netflix/issues/373
 #### Eureka开启自我保护的提示
 <p style='color:red'>EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE. </p>
 
-- ## Eureka配置instanceId显示IP
+- ### Eureka配置instanceId显示IP
 ```java
 eureka:
   client:
