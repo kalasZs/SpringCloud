@@ -1,12 +1,13 @@
 spring:
   application:
-    name: clientA
+    name: serviceProvider
 
 server:
   port: 2221
 
 eureka:
   instance:
+    hostname: serviceProvider
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
   client:

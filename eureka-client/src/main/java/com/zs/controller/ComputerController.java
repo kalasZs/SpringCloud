@@ -19,6 +19,7 @@ public class ComputerController {
 
     @RequestMapping(value = "/add" , method= RequestMethod.GET)
     public Integer add(@RequestParam Integer a,@RequestParam Integer b){
+        System.out.println("11111111111111");
         ServiceInstance instance = discoveryClient.getLocalServiceInstance();
         Integer r = a + b;
         logger.info("/add, host:" + instance.getHost() + ", service_id:" + instance.getServiceId() + ", result:" + r);

@@ -24,4 +24,13 @@ public class ComputerController {
         logger.info("/minus, host:" + instance.getHost() + ", service_id:" + instance.getServiceId() + ", result:" + r);
         return r;
     }
+
+    @RequestMapping(value = "/add" , method= RequestMethod.GET)
+    public Integer add(@RequestParam Integer a,@RequestParam Integer b){
+        System.out.println("22222222222222");
+        ServiceInstance instance = discoveryClient.getLocalServiceInstance();
+        Integer r = a + b;
+        logger.info("/add, host:" + instance.getHost() + ", service_id:" + instance.getServiceId() + ", result:" + r);
+        return r;
+    }
 }
