@@ -83,7 +83,9 @@ eureka:
 　　　enable: true
 ```
 
-- ### Ribbon & Feign
+
+
+## Ribbon & Feign
 
 <p>基于`HTTP`和`TCP`客户端的负载均衡器,可以在通过客户端中配置的`ribbonServerList`服务端列表去轮询访问以达到均衡负载的作用。</p>
 <p>`Feign`是一个声明式的`Web Service`客户端，它使得编写`Web
