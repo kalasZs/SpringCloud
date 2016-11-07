@@ -87,7 +87,9 @@ eureka:
 
 ## Ribbon & Feign
 
-<p>基于`HTTP`和`TCP`客户端的负载均衡器,可以在通过客户端中配置的`ribbonServerList`服务端列表去轮询访问以达到均衡负载的作用。</p>
+
+
+<p>`Ribbon`基于`HTTP`和`TCP`客户端的负载均衡器,可以在通过客户端中配置的`ribbonServerList`服务端列表去轮询访问以达到均衡负载的作用。</p>
 <p>`Feign`是一个声明式的`Web Service`客户端，它使得编写`Web
 Serivce`客户端变得更加简单。</br>我们只需要使用`Feign`来创建一个接口并用注解来配置它既可完成。它具备可插拔的注解支持，包括`Feign`
 注解和`JAX-RS`注解。`Feign`也支持可插拔的编码器和解码器。</br>`Spring Cloud`为`Feign`增加了对`Spring
