@@ -14,5 +14,6 @@
         <module>eureka-client</module>
         <module>eureka-client2</module>
         <module>ribbon</module>
+        <module>feign</module>
     </modules>
 </project>
